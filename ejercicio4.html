@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var numeroRandom = Math.floor(Math.random()*10)+1;
+        var numeroPropuesto;
+
+        numeroPropuesto = parseInt(prompt("Adivina el número:"));
+
+        while (numeroRandom != numeroPropuesto) {
+            numeroPropuesto = parseInt(prompt("Intenta de nuevo:"));
+        }
+        alert("Felicidades, el número aleatorio era: "+numeroRandom);
+    </script>
+</body>
+
+</html>

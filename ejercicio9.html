@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script>
+        let contadorPares = 0;
+        let entrada;
+        let bandera = true;
+
+        while (bandera == true) {
+            entrada = prompt("Introduce un número o 'stop' para terminar):");
+
+            let numero = parseInt(entrada);
+
+            if (entrada.toLowerCase() === "stop") {
+                bandera = false;
+            }
+            else if (numero % 2 === 0) {
+                alert("Par");
+                contadorPares++;
+            } else {
+                alert("Impar");
+            }
+        }
+        alert("Número de pares: "+contadorPares);
+    </script>
+</body>
+
+</html>

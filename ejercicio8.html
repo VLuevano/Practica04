@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var n1 = Math.floor(Math.random()*10)+1;
+        var n2 = Math.floor(Math.random()*10)+1;
+        var suma = n1 + n2;
+        var sumaPropuesta;
+
+        sumaPropuesta = parseInt(prompt("Ingresa el resultado de la suma de: " + n1 + " + " + n2));
+
+        while (suma != sumaPropuesta) {
+            sumaPropuesta = parseInt(prompt("Ingresa el resultado de la suma de: " + n1 + " + " + n2));
+        }
+        alert("Correcto, el resultado de la suma es: "+suma);
+    </script>
+</body>
+
+</html>

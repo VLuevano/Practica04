@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var año = 0;
+
+        año = prompt("Ingresa un año:");
+
+        if (año % 4 != 0) {
+            alert(año + " no es año bisiesto");   
+        }else if (año % 100 != 0) {
+            alert(año + " es año bisiesto");
+        }else if (año % 400 != 0) {
+            alert(año + " no es año bisiesto");
+        } else {
+            alert(año + "es año bisiesto");
+        }
+
+    </script>
+</body>
+
+</html>

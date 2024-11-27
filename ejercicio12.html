@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script>
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        let dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        let mes = prompt("Ingresa el nombre de un mes");
+
+        let mesNormalizado = mes.charAt(0).toUpperCase() + mes.slice(1).toLowerCase();
+
+        let indice = meses.indexOf(mesNormalizado);
+
+        if (indice !== -1) {
+            alert(mesNormalizado + " tiene " + dias[indice] + " días");
+        } else {
+            alert("Mes no válido. Intenta de nuevo con un mes correcto.");
+        }
+
+    </script>
+
+</body>
+
+</html>
