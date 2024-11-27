@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Víctor Luévano</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let suma = 0;
+        let detalles = "";
+        let n = parseInt(prompt("Ingrese un número:"));
+
+        if (n < 1 || !Number.isInteger(n)) {
+            console.error("Por favor, ingrese un número válido");
+            return;
+        }
+
+        for (let i = 1; i <= n; i++) {
+            suma += 1 / i;
+            detalles += `1/${i}`;
+            if (i < n) detalles += " + ";
+        }
+
+        alert("Detalles:" + detalles);
+        alert("Suma de los recíprocos:" + suma.toFixed(6));
+
+    </script>
+</body>
+
+</html>
